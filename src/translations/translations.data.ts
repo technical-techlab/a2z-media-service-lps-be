@@ -46,18 +46,18 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
       hero: {
         title: 'Social Media that Drives Real Business Results',
         subtitle: 'We turn strategy, content, and consistency into measurable growth.',
-        description: 'test description',
+        description: 'Reach out to us now and start seeing results!',
         cta: 'START NOW'
       },
       socialMedia: {
         title: 'Social Media Management',
-        description: 'From content creation to analytics, we handle the day-to-day of your social media so you can focus on what you do best—running your business.',
+        description: 'We develop strategic, creatively-led content directions that guide audiences from awareness to action, using strong storytelling, clear messaging, and consistent visual identity.',
         points: [
-          'Our social media management approach integrates:',
-          'Data-driven strategies with measurable results',
-          'Content creation that aligns with your brand and resonates with your audience',
-          'Deliver relevant, audience-first content that plans to the right platforms',
-          'Increase follower engagement'
+          'Our social media management approach is designed to:',
+          'Create content that supports sales journeys naturally',
+          'Build credibility and long-term brand trust through storytelling',
+          'Deliver relevant, audience-first content that attracts the right attention',
+          'Increase conversion opportunities'
         ],
         cta: 'START NOW'
       },
@@ -101,20 +101,21 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
     },
     creative: {
       hero: {
-        title: 'Creative Solutions that Transform Your Brand',
-        subtitle: 'Innovative strategies that bring your vision to life.',
-        description: 'Creative solutions description',
+        title: 'Creativity that moves people.',
+        subtitle: 'Creative visuals, direction, events conceptualization, and activations. We craft experiences that engage, inspire, and leave a lasting impact.',
+        description: 'Reach out to us now and start seeing results!',
         cta: 'START NOW'
       },
       socialMedia: {
-        title: 'Creative Solutions',
-        description: 'We craft compelling narratives and visual identities that resonate with your audience and elevate your brand presence.',
+        title: 'Creative & Activations',
+        description: 'Starting with creative direction all the way to on-ground activations and live events, we focus on experiences that feel thoughtful and true to your brand. Every move has a purpose.',
         points: [
-          'Our creative approach includes:',
-          'Brand strategy and positioning',
-          'Visual identity design',
-          'Content creation and storytelling',
-          'Campaign conceptualization'
+        'Our approach is built around:',
+        'Clear creative direction and strong brand alignment',
+        'Creative ideas and visuals that align with brand identity',
+        'Activations and events that invite real participation',
+        'Concepts that guarantee real impact'
+
         ],
         cta: 'START NOW'
       },
@@ -158,20 +159,23 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
     },
     'media-buying': {
       hero: {
-        title: 'Media Buying & Advertising Excellence',
-        subtitle: 'Strategic ad placements that maximize your ROI.',
-        description: 'Media buying description',
+        title: 'Paid media that actually performs.',
+        subtitle: 'Based on clear strategies, we plan, run, and optimize paid campaigns that turn spend into measurable ROI.',
+        description: 'Reach out to us now and start seeing results!',
         cta: 'START NOW'
       },
       socialMedia: {
-        title: 'Media Buying & Advertising',
-        description: 'We optimize your advertising spend across all channels to reach the right audience at the right time with the right message.',
+        title: 'Media Buying',
+        description: 'We develop full-funnel media strategies that move audiences from awareness to action, utilizing smart planning, clear objectives, and continuous optimization to maximize real impact.',
         points: [
-          'Our media buying services include:',
-          'Multi-channel campaign management',
-          'Performance tracking and optimization',
-          'Audience targeting and segmentation',
-          'Budget optimization strategies'
+          'Our media buying approach is designed to:',
+          'Develop comprehensive strategies that turn ad spend into qualified leads and measurable sales',
+          'Identify & reach the right audience across platforms',
+          'Align creatives and messaging with campaign goals and funnel stages',
+          'Improve performance over time through testing and optimization',
+          'Deliver clear & actionable reporting that connects media spend to real business outcomes'
+
+
         ],
         cta: 'START NOW'
       },
@@ -180,7 +184,7 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
         items: [
           {
             title: 'Creative Solutions',
-            description: 'Innovative content strategies'
+            description: 'Innovative content strategies' 
           },
           {
             title: 'Media Buying & Advertising',
@@ -274,20 +278,23 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
   ar: {
     smm: {
       hero: {
-        title: 'وسائل التواصل الاجتماعي التي تحقق نتائج أعمال حقيقية',
-        subtitle: 'نحول الاستراتيجية والمحتوى والاتساق إلى نمو قابل للقياس.',
-        description: 'اختبار الوصف',
+        title: 'من منصات التواصل الاجتماعي إلى نتائج حقيقية.',
+        subtitle: 'استراتيجية واضحة ومحتوى منتظم يؤدي إلى نتائج ملموسة.',
+        description: 'تواصل معنا الآن وابدأ بتحقيق النتائج!',
         cta: 'ابدأ الآن'
       },
       socialMedia: {
         title: 'إدارة وسائل التواصل الاجتماعي',
-        description: 'من إنشاء المحتوى إلى التحليلات، نتعامل مع الأعمال اليومية لوسائل التواصل الاجتماعي الخاصة بك حتى تتمكن من التركيز على ما تفعله بشكل أفضل - إدارة عملك.',
+        description: 'نقدم استراتيجيات محتوى مبتكرة تقود جمهورك المستهدف خطوة بخطوة، من الوعي بالعلامة التجارية إلى اتخاذ القرار، من خلال سرد قصصي قوي، رسائل واضحة، وهوية بصرية متناسقة.',
         points: [
-          'يتضمن نهج إدارة وسائل التواصل الاجتماعي لدينا:',
-          'استراتيجيات قائمة على البيانات مع نتائج قابلة للقياس',
-          'إنشاء محتوى يتماشى مع علامتك التجارية ويتردد صداه مع جمهورك',
-          'تقديم محتوى ذي صلة يركز على الجمهور ويخطط للمنصات المناسبة',
-          'زيادة تفاعل المتابعين'
+         
+          'يرتكز أسلوبنا في إدارة وسائل التواصل الاجتماعي على:',
+          'إنتاج محتوى يدعم رحلة الشراء بشكل طبيعي',
+          'بناء مصداقية وثقة طويلة الأمد مع جمهورك عبر القصص الأصيلة',
+          'تقديم محتوى ملائم لكل منصة ليجذب الانتباه الصحيح',
+          'زيادة فرص اتخاذ القرار وتحقيق نتائج ملموسة',
+          
+    
         ],
         cta: 'ابدأ الآن'
       },
@@ -331,20 +338,21 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
     },
     creative: {
       hero: {
-        title: 'حلول إبداعية تحول علامتك التجارية',
-        subtitle: 'استراتيجيات مبتكرة تجعل رؤيتك حقيقة.',
-        description: 'وصف الحلول الإبداعية',
+        title: 'أفكار وتجارب تُلهم وتبقى.',
+        subtitle: 'أفكار، تصاميم إبداعية، وفعاليات، تكوّن تجارب مميزة تترك بصمة حقيقية عند جمهورك.',
+        description: 'تواصل معنا الآن وابدأ بتحقيق النتائج!',
         cta: 'ابدأ الآن'
       },
       socialMedia: {
-        title: 'الحلول الإبداعية',
-        description: 'نصنع قصصًا مقنعة وهويات بصرية تتردد صداها مع جمهورك وترفع من حضور علامتك التجارية.',
+        title: 'التصاميم الإبداعية والفعاليات',
+        description: 'نقدم تصاميم إبداعية مع التوجيه اللازم بجاني الأنشطة والفعاليات، مع التركيز على خلق تجارب مدروسة تتماشى مع هوية علامتك التجارية. كل خطوة بهدف واضح.',
         points: [
-          'يتضمن نهجنا الإبداعي:',
-          'استراتيجية العلامة التجارية وتحديد المواقع',
-          'تصميم الهوية البصرية',
-          'إنشاء المحتوى وسرد القصص',
-          'تصور الحملات'
+         'يعتمد أسلوبنا الإبداعي على:',
+          'توجيه إبداعي واضح ومتسق مع هوية العلامة التجارية',
+          'أفكار وتصاميم مبتكرة تعكس هوية العلامة التجارية',
+          'فعاليات وتجارب تجذب الجمهور المستهدف للمشاركة',
+          'أفكار متكاملة تضمن تحقيق أثر ملموس'
+
         ],
         cta: 'ابدأ الآن'
       },
@@ -388,20 +396,22 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
     },
     'media-buying': {
       hero: {
-        title: 'التميز في شراء الوسائط والإعلان',
-        subtitle: 'مواضع إعلانية استراتيجية تزيد من عائد استثمارك.',
-        description: 'وصف شراء الوسائط',
+        title: 'حملات إعلانية مدفوعة تحقق أهدافك.',
+        subtitle: 'باستراتيجيات واضحة، نخطط، نشغّل، ونعدّل الحملات باستمرار لضمان أن كل ريال يُساهم في نتائج حقيقية ملموسة.',
+        description: 'تواصل معنا الآن وابدأ بتحقيق النتائج!',
         cta: 'ابدأ الآن'
       },
       socialMedia: {
-        title: 'شراء الوسائط والإعلان',
-        description: 'نحسن إنفاقك الإعلاني عبر جميع القنوات للوصول إلى الجمهور المناسب في الوقت المناسب بالرسالة المناسبة.',
-        points: [
-          'تشمل خدمات شراء الوسائط لدينا:',
-          'إدارة الحملات متعددة القنوات',
-          'تتبع الأداء والتحسين',
-          'استهداف الجمهور والتجزئة',
-          'استراتيجيات تحسين الميزانية'
+        title: 'الإعلانات الممولة وتحسين الأداء',
+        description: 'نقدم استراتيجيات إعلانية شاملة تدفع جمهورك المستهدف إلى اتخاذ القرار، باستخدام تخطيط ذكي، أهداف واضحة، وتحسين مستمر لضمان تأثير حقيقي وملموس.',
+          points: [
+            '  يركز أسلوبنا في الإعلانات الممولة على:',
+            'تطوير استراتيجيات متكاملة للوصول إلى عملاء محتملين ومبيعات قابلة للقياس',
+            'تحديد الجمهور المناسب والوصول إليه عبر جميع المنصات',
+            'مواءمة الإعلانات والرسائل مع أهداف الحملة ومراحل رحلة العميل',
+            'تحسين الأداء بشكل مستمر من خلال الاختبار والتعديل',
+            'تقديم تقارير واضحة وقابلة للتنفيذ تربط الإعلانات الممولة بالنتائج الحقيقية لأعمالك'
+
         ],
         cta: 'ابدأ الآن'
       },
