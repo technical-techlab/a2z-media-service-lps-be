@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Submission {
+  id           Int      @id @default(autoincrement())
+  fullName     String   @map("full_name")
+  lastName     String   @map("last_name")
+  emailAddress String   @map("email_address")
+  phoneNumber  String   @map("phone_number")
+  phoneCountry String   @map("phone_country")
+  companyName  String   @map("company_name")
+  service      String
+  language     String
+  country      String
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+
+  @@map("submissions")
+}
