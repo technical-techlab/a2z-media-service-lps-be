@@ -1,4 +1,4 @@
-export type ServiceSlug = 'smm' | 'creative' | 'media-buying' | 'events';
+export type ServiceSlug = 'smm' | 'creative' | 'media-buying';
 
 export interface Translation {
   hero: {
@@ -17,7 +17,6 @@ export interface Translation {
     title: string;
     items: Array<{
       title: string;
-      description: string;
     }>;
   };
   clients: {
@@ -65,21 +64,15 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
         title: 'Our Services',
         items: [
           {
-            title: 'Creative Solutions',
-            description: 'Innovative content strategies'
+            title: 'Creative Solutions & Activations Management'
           },
           {
-            title: 'Media Buying & Advertising',
-            description: 'Targeted ad campaigns'
+            title: 'Social Media Management, PR & Influencers'
           },
           {
-            title: 'Social Media Management & Influencers',
-            description: 'Complete social presence'
+            title: 'Media Buying & Performance',
           },
-          {
-            title: 'Events & Activations Management',
-            description: 'Memorable experiences'
-          }
+     
         ]
       },
       clients: {
@@ -121,23 +114,17 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
       },
       services: {
         title: 'Our Services',
-        items: [
+             items: [
           {
-            title: 'Creative Solutions',
-            description: 'Innovative content strategies'
+            title: 'Creative Solutions & Activations Management'
           },
           {
-            title: 'Media Buying & Advertising',
-            description: 'Targeted ad campaigns'
+            title: 'Social Media Management, PR & Influencers'
           },
           {
-            title: 'Social Media Management & Influencers',
-            description: 'Complete social presence'
+            title: 'Media Buying & Performance',
           },
-          {
-            title: 'Events & Activations Management',
-            description: 'Memorable experiences'
-          }
+     
         ]
       },
       clients: {
@@ -181,23 +168,17 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
       },
       services: {
         title: 'Our Services',
-        items: [
+               items: [
           {
-            title: 'Creative Solutions',
-            description: 'Innovative content strategies' 
+            title: 'Creative Solutions & Activations Management'
           },
           {
-            title: 'Media Buying & Advertising',
-            description: 'Targeted ad campaigns'
+            title: 'Social Media Management, PR & Influencers'
           },
           {
-            title: 'Social Media Management & Influencers',
-            description: 'Complete social presence'
+            title: 'Media Buying & Performance',
           },
-          {
-            title: 'Events & Activations Management',
-            description: 'Memorable experiences'
-          }
+     
         ]
       },
       clients: {
@@ -217,63 +198,7 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
         copyright: '© 2026 A2Z Media. Powered by A2Z Media Group. All Rights Reserved.'
       }
     },
-    events: {
-      hero: {
-        title: 'Events & Activations that Create Lasting Impact',
-        subtitle: 'Memorable experiences that connect your brand with audiences.',
-        description: 'Events description',
-        cta: 'START NOW'
-      },
-      socialMedia: {
-        title: 'Events & Activations Management',
-        description: 'From concept to execution, we create immersive brand experiences that engage audiences and drive meaningful connections.',
-        points: [
-          'Our event services include:',
-          'Event planning and management',
-          'Brand activations',
-          'Experiential marketing',
-          'Post-event analysis and reporting'
-        ],
-        cta: 'START NOW'
-      },
-      services: {
-        title: 'Our Services',
-        items: [
-          {
-            title: 'Creative Solutions',
-            description: 'Innovative content strategies'
-          },
-          {
-            title: 'Media Buying & Advertising',
-            description: 'Targeted ad campaigns'
-          },
-          {
-            title: 'Social Media Management & Influencers',
-            description: 'Complete social presence'
-          },
-          {
-            title: 'Events & Activations Management',
-            description: 'Memorable experiences'
-          }
-        ]
-      },
-      clients: {
-        title: 'Our Clients'
-      },
-      contact: {
-        title: 'Get in touch',
-        fullName: 'First name',
-        lastName: 'Last name',
-        emailAddress: 'Email address',
-        phoneNumber: 'Phone number',
-        phoneCountry: '+966',
-        companyName: 'Company name',
-        submit: 'Submit'
-      },
-      footer: {
-        copyright: '© 2026 A2Z Media. Powered by A2Z Media Group. All Rights Reserved.'
-      }
-    }
+  
   },
   ar: {
     smm: {
@@ -303,20 +228,14 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
         items: [
           {
             title: 'الحلول الإبداعية',
-            description: 'استراتيجيات محتوى مبتكرة'
           },
           {
             title: 'شراء الوسائط والإعلان',
-            description: 'حملات إعلانية مستهدفة'
           },
           {
             title: 'إدارة وسائل التواصل الاجتماعي والمؤثرين',
-            description: 'حضور اجتماعي كامل'
           },
-          {
-            title: 'إدارة الفعاليات والتنشيطات',
-            description: 'تجارب لا تنسى'
-          }
+        
         ]
       },
       clients: {
@@ -361,20 +280,14 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
         items: [
           {
             title: 'الحلول الإبداعية',
-            description: 'استراتيجيات محتوى مبتكرة'
           },
           {
             title: 'شراء الوسائط والإعلان',
-            description: 'حملات إعلانية مستهدفة'
           },
           {
             title: 'إدارة وسائل التواصل الاجتماعي والمؤثرين',
-            description: 'حضور اجتماعي كامل'
           },
-          {
-            title: 'إدارة الفعاليات والتنشيطات',
-            description: 'تجارب لا تنسى'
-          }
+        
         ]
       },
       clients: {
@@ -420,77 +333,14 @@ export const translations: Record<'en' | 'ar', LanguageTranslations> = {
         items: [
           {
             title: 'الحلول الإبداعية',
-            description: 'استراتيجيات محتوى مبتكرة'
           },
           {
             title: 'شراء الوسائط والإعلان',
-            description: 'حملات إعلانية مستهدفة'
           },
           {
             title: 'إدارة وسائل التواصل الاجتماعي والمؤثرين',
-            description: 'حضور اجتماعي كامل'
           },
-          {
-            title: 'إدارة الفعاليات والتنشيطات',
-            description: 'تجارب لا تنسى'
-          }
-        ]
-      },
-      clients: {
-        title: 'عملاؤنا'
-      },
-      contact: {
-        title: 'تواصل معنا',
-        fullName: 'الاسم الأول',
-        lastName: 'اسم العائلة',
-        emailAddress: 'البريد الإلكتروني',
-        phoneNumber: 'رقم الهاتف',
-        phoneCountry: '+966',
-        companyName: 'اسم الشركة',
-        submit: 'إرسال'
-      },
-      footer: {
-        copyright: '© 2025 A2Z ميديا. مدعوم من A2Z ميديا جروب. جميع الحقوق محفوظة.'
-      }
-    },
-    events: {
-      hero: {
-        title: 'فعاليات وتنشيطات تخلق تأثيرًا دائمًا',
-        subtitle: 'تجارب لا تنسى تربط علامتك التجارية بالجماهير.',
-        description: 'وصف الفعاليات',
-        cta: 'ابدأ الآن'
-      },
-      socialMedia: {
-        title: 'إدارة الفعاليات والتنشيطات',
-        description: 'من المفهوم إلى التنفيذ، نخلق تجارب علامة تجارية غامرة تشرك الجماهير وتدفع الاتصالات الهادفة.',
-        points: [
-          'تشمل خدمات الفعاليات لدينا:',
-          'تخطيط وإدارة الفعاليات',
-          'تنشيطات العلامة التجارية',
-          'التسويق التجريبي',
-          'تحليل وتقارير ما بعد الحدث'
-        ],
-        cta: 'ابدأ الآن'
-      },
-      services: {
-        title: 'خدماتنا',
-        items: [
-          {
-            title: 'الحلول الإبداعية',
-            description: 'استراتيجيات محتوى مبتكرة'
-          },
-          {
-            title: 'شراء الوسائط والإعلان',
-            description: 'حملات إعلانية مستهدفة'
-          },
-          {
-            title: 'إدارة وسائل التواصل الاجتماعي والمؤثرين',
-            description: 'حضور اجتماعي كامل'
-          },
-          {
-            title: 'إدارة الفعاليات والتنشيطات',
-            description: 'تجارب لا تنسى'
-          }
+     
         ]
       },
       clients: {
