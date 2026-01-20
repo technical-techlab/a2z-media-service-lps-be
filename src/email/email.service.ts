@@ -33,7 +33,7 @@ export class EmailService {
       await this.transporter.sendMail({
         from: fromEmail,
         to: adminEmail,
-        subject: `New Form Submission - ${submission.country}`,
+        subject: `New Form Submission - ${submission.country} - ${submission.service}`,
         html: emailHtml,
       });
       console.log('Email notification sent successfully');
@@ -44,112 +44,186 @@ export class EmailService {
   }
 
   private generateSubmissionEmailTemplate(submission: CreateSubmissionDto & { id?: number }): string {
+    const submissionDate = new Date().toLocaleString('en-US', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit'
+    });
+
     return `
       <!DOCTYPE html>
-      <html>
+      <html lang="en">
       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
           body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 600px;
-            margin: 0 auto;
+            color: #333333;
+            background-color: #f5f5f5;
             padding: 20px;
           }
+          .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          }
           .header {
-            background: linear-gradient(135deg, #ED0B73 0%, #F35CA1 100%);
-            color: white;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #ffffff;
             padding: 30px;
             text-align: center;
-            border-radius: 8px 8px 0 0;
+          }
+          .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin: 0;
           }
           .content {
-            background: #f9f9f9;
             padding: 30px;
-            border: 1px solid #ddd;
-            border-top: none;
-            border-radius: 0 0 8px 8px;
           }
-          .field {
+          .greeting {
+            font-size: 15px;
+            color: #333333;
             margin-bottom: 20px;
-            padding: 15px;
-            background: white;
-            border-radius: 5px;
+          }
+          .intro-text {
+            font-size: 15px;
+            color: #333333;
+            margin-bottom: 25px;
+            line-height: 1.6;
+          }
+          .info-box {
+            background: #f8f9fa;
             border-left: 4px solid #ED0B73;
+            padding: 20px;
+            margin-bottom: 25px;
           }
-          .field-label {
-            font-weight: bold;
+          .info-row {
+            display: flex;
+            padding: 8px 0;
+            border-bottom: 1px solid #e9ecef;
+          }
+          .info-row:last-child {
+            border-bottom: none;
+          }
+          .info-label {
+            font-weight: 600;
+            color: #495057;
+            min-width: 140px;
+            font-size: 14px;
+          }
+          .info-value {
+            color: #212529;
+            font-size: 14px;
+            flex: 1;
+          }
+          .info-value a {
             color: #ED0B73;
-            font-size: 12px;
-            text-transform: uppercase;
-            margin-bottom: 5px;
+            text-decoration: none;
           }
-          .field-value {
-            font-size: 16px;
-            color: #333;
+          .info-value a:hover {
+            text-decoration: underline;
+          }
+          .closing-text {
+            font-size: 14px;
+            color: #666666;
+            margin-top: 20px;
           }
           .footer {
+            background: #f8f9fa;
+            padding: 20px 30px;
             text-align: center;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid #ddd;
-            color: #666;
             font-size: 12px;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+          }
+          @media only screen and (max-width: 600px) {
+            .info-row {
+              flex-direction: column;
+            }
+            .info-label {
+              margin-bottom: 4px;
+            }
           }
         </style>
       </head>
       <body>
-        <div class="header">
-          <h1>🎉 New Form Submission</h1>
-          <p>A2Z Media Landing Page</p>
-        </div>
-        <div class="content">
-          ${submission.id ? `
-          <div class="field">
-            <div class="field-label">Submission ID</div>
-            <div class="field-value">#${submission.id}</div>
-          </div>
-          ` : ''}
-          
-          <div class="field">
-            <div class="field-label">Full Name</div>
-            <div class="field-value">${submission.fullName} ${submission.lastName}</div>
+        <div class="email-container">
+          <div class="header">
+            <h1>New Lead Submission</h1>
           </div>
           
-          <div class="field">
-            <div class="field-label">Email Address</div>
-            <div class="field-value"><a href="mailto:${submission.emailAddress}">${submission.emailAddress}</a></div>
+          <div class="content">
+            <div class="greeting">Hello Team,</div>
+            
+            <div class="intro-text">
+              A new lead has submitted the contact form for <strong>${submission.service}</strong> on <strong>${submissionDate}</strong>.
+            </div>
+            
+            <div class="info-box">
+              <div class="info-row">
+                <div class="info-label">Full Name:</div>
+                <div class="info-value">${submission.fullName} ${submission.lastName}</div>
+              </div>
+              
+              <div class="info-row">
+                <div class="info-label">Email:</div>
+                <div class="info-value"><a href="mailto:${submission.emailAddress}">${submission.emailAddress}</a></div>
+              </div>
+              
+              <div class="info-row">
+                <div class="info-label">Phone:</div>
+                <div class="info-value">${submission.phoneCountry} ${submission.phoneNumber}</div>
+              </div>
+              
+              <div class="info-row">
+                <div class="info-label">Company:</div>
+                <div class="info-value">${submission.companyName}</div>
+              </div>
+              
+              <div class="info-row">
+                <div class="info-label">Service:</div>
+                <div class="info-value">${submission.service}</div>
+              </div>
+              
+              <div class="info-row">
+                <div class="info-label">Country:</div>
+                <div class="info-value">${submission.country}</div>
+              </div>
+              
+              <div class="info-row">
+                <div class="info-label">Language:</div>
+                <div class="info-value">${submission.language === 'en' ? 'English' : 'Arabic'}</div>
+              </div>
+              ${submission.id ? `
+              <div class="info-row">
+                <div class="info-label">Submission ID:</div>
+                <div class="info-value">#${submission.id}</div>
+              </div>
+              ` : ''}
+            </div>
+            
+            <div class="closing-text">
+              Please follow up with this lead at your earliest convenience.
+            </div>
           </div>
           
-          <div class="field">
-            <div class="field-label">Phone Number</div>
-            <div class="field-value">${submission.phoneCountry} ${submission.phoneNumber}</div>
+          <div class="footer">
+            This is an automated notification from A2Z Media Landing Page System.<br>
+            © ${new Date().getFullYear()} A2Z Media. All rights reserved.
           </div>
-          
-          <div class="field">
-            <div class="field-label">Company Name</div>
-            <div class="field-value">${submission.companyName}</div>
-          </div>
-          
-          <div class="field">
-            <div class="field-label">Service</div>
-            <div class="field-value">${submission.service}</div>
-          </div>
-          
-          <div class="field">
-            <div class="field-label">Country</div>
-            <div class="field-value">${submission.country}</div>
-          </div>
-          
-          <div class="field">
-            <div class="field-label">Language</div>
-            <div class="field-value">${submission.language === 'en' ? 'English' : 'Arabic'}</div>
-          </div>
-        </div>
-        <div class="footer">
-          <p>This is an automated notification from A2Z Media Landing Page</p>
-          <p>© ${new Date().getFullYear()} A2Z Media. All rights reserved.</p>
         </div>
       </body>
       </html>
