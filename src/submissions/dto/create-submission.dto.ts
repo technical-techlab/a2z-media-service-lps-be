@@ -8,4 +8,5 @@ export class CreateSubmissionDto {
   service: string;
   language: string;
   country: string;
+  recaptchaToken?: string;
 }

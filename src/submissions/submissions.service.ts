@@ -1,6 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { PrismaService } from '../prisma/prisma.service';
 import { EmailService } from '../email/email.service';
+import { RecaptchaService } from '../recaptcha/recaptcha.service';
 import { CreateSubmissionDto } from './dto/create-submission.dto';
 
 @Injectable()
@@ -8,11 +9,20 @@ export class SubmissionsService {
   constructor(
     private prisma: PrismaService,
     private emailService: EmailService,
+    private recaptchaService: RecaptchaService,
   ) {}
 
   async create(createSubmissionDto: CreateSubmissionDto) {
+    if (this.recaptchaService.isRecaptchaEnabled()) {
+      await this.recaptchaService.verifyToken(
+        createSubmissionDto.recaptchaToken,
+      );
+    }
+
+    const { recaptchaToken, ...submissionData } = createSubmissionDto;
+    
     const submission = await this.prisma.submission.create({
-      data: createSubmissionDto,
+      data: submissionData,
     });
 
     // Send email notification to admin
