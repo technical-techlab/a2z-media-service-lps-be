@@ -2,6 +2,7 @@ export type ServiceSlug = "smm" | "creative" | "media-buying";
 
 export interface Translation {
   hero: {
+    tagline: string;
     title: string;
     subtitle: string;
     description: string;
@@ -11,6 +12,7 @@ export interface Translation {
     title: string;
     description: string;
     points: string[];
+    outcome: string;
     cta: string;
   };
   services: {
@@ -21,6 +23,13 @@ export interface Translation {
   };
   clients: {
     title: string;
+  };
+  analytics: {
+    title: string;
+    metrics: Array<{
+      value: string;
+      label: string;
+    }>;
   };
   contact: {
     title: string;
@@ -43,24 +52,26 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
   en: {
     smm: {
       hero: {
-        title: "Social Media that Drives Real Business Results",
+        tagline: "Award-Winning Media Agency",
+        title: "Be consistently ahead in your marketing, guided by our proven systems and real results.",
         subtitle:
-          "We turn strategy, content, and consistency into measurable growth.",
+          "We are your fully integrated partner, delivering results and end-to-end in-house execution supported by exceptional service.",
         description: "Reach out to us now and start seeing results!",
-        cta: "START NOW",
+        cta: "Request a Free Audit",
       },
       socialMedia: {
-        title: "Social Media Management",
+        title: "SOCIAL MEDIA MANAGEMENT",
         description:
-          "We develop strategic, creatively-led content directions that guide audiences from awareness to action, using strong storytelling, clear messaging, and consistent visual identity.",
+          "Posting consistently but not seeing real results? If your content looks good but doesn't drive leads, trust, or clear ROI, the problem isn't effort, it's structure.",
         points: [
-          "Our social media management approach is designed to:",
-          "Create content that supports sales journeys naturally",
-          "Build credibility and long-term brand trust through storytelling",
-          "Deliver relevant, audience-first content that attracts the right attention",
-          "Increase conversion opportunities",
+          "How we fix it? We turn social media into a focused growth channel by:",
+          "Creating content that naturally supports the sales journey.",
+          "Building credibility through clear storytelling and consistent branding.",
+          "Attracting the right audience, not just engagement.",
+          "Increasing conversion opportunities with strategy-led execution.",
         ],
-        cta: "START NOW",
+        outcome: "Social media that works for your business, not just your feed.",
+        cta: "IMPROVE MY SOCIAL MEDIA PERFORMANCE",
       },
       services: {
         title: "Our Services",
@@ -81,6 +92,23 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       clients: {
         title: "Our Clients",
+      },
+      analytics: {
+        title: "We make your social media work harder for your business:",
+        metrics: [
+          {
+            value: "+68%",
+            label: "average engagement growth",
+          },
+          {
+            value: "+42%",
+            label: "increase in qualified inbound leads",
+          },
+          {
+            value: "–35%",
+            label: "lower cost per lead from social channels",
+          },
+        ],
       },
       contact: {
         title: "Get in touch",
@@ -99,24 +127,26 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     },
     creative: {
       hero: {
-        title: "Creativity that moves people.",
+        tagline: "Award-Winning Media Agency",
+        title: "Be consistently ahead in your marketing guided by our proven systems and real results.",
         subtitle:
-          "Creative visuals, direction, events conceptualization, and activations. We craft experiences that engage, inspire, and leave a lasting impact.",
+          "We are your fully integrated partner, delivering results and end-to-end in-house execution supported by exceptional service.",
         description: "Reach out to us now and start seeing results!",
-        cta: "START NOW",
+        cta: "Request a Free Creative Review",
       },
       socialMedia: {
         title: "Creative & Activations",
         description:
-          "Starting with creative direction all the way to on-ground activations and live events, we focus on experiences that feel thoughtful and true to your brand. Every move has a purpose.",
+          "Great ideas but limited real-world impact? When campaigns look impressive yet fail to engage, and events generate noise without lasting value, the challenge isn't creativity – it's alignment and execution.",
         points: [
-          "Our approach is built around:",
-          "Clear creative direction and strong brand alignment",
-          "Creative ideas and visuals that align with brand identity",
-          "Activations and events that invite real participation",
-          "Concepts that guarantee real impact",
+          "How we fix it? We create brand-led concepts and activations designed to translate ideas into meaningful experiences. We do this by:",
+          "Setting clear creative direction from the start",
+          "Developing concepts that feel authentic and intentional",
+          "Designing activations that invite real participation",
+          "Executing live events and on-ground activations with purpose",
         ],
-        cta: "START NOW",
+        outcome: "Creative work and activations that people remember – and brands benefit from long after the moment ends.",
+        cta: "EXPLORE WHAT YOUR BRAND COULD ACTIVATE",
       },
       services: {
         title: "Our Services",
@@ -137,6 +167,23 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       clients: {
         title: "Our Clients",
+      },
+      analytics: {
+        title: "We deliver memorable experiences with lasting results",
+        metrics: [
+          {
+            value: "+65%",
+            label: "increase in audience engagement at activations",
+          },
+          {
+            value: "+48%",
+            label: "higher brand recall post-campaigns and events",
+          },
+          {
+            value: "+40%",
+            label: "uplift in footfall and interaction rates",
+          },
+        ],
       },
       contact: {
         title: "Get in touch",
@@ -155,25 +202,27 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     },
     "media-buying": {
       hero: {
-        title: "Paid media that actually performs.",
+        tagline: "Award-Winning Media Agency",
+        title: "Be consistently ahead in your marketing guided by our proven systems and real results.",
         subtitle:
-          "Based on clear strategies, we plan, run, and optimize paid campaigns that turn spend into measurable ROI.",
+          "We are your fully integrated partner, delivering results and end-to-end in-house execution supported by exceptional service.",
         description: "Reach out to us now and start seeing results!",
-        cta: "START NOW",
+        cta: "Request a Free Audit",
       },
       socialMedia: {
         title: "Media Buying",
         description:
-          "We develop full-funnel media strategies that move audiences from awareness to action, utilizing smart planning, clear objectives, and continuous optimization to maximize real impact.",
+          "Spending on ads but unsure what's actually driving results? If your ad budget is going out every month but leads are inconsistent, costs keep rising, or performance feels unpredictable, the issue isn't spend, it's strategy and optimisation.",
         points: [
-          "Our media buying approach is designed to:",
-          "Develop comprehensive strategies that turn ad spend into qualified leads and measurable sales",
-          "Identify & reach the right audience across platforms",
-          "Align creatives and messaging with campaign goals and funnel stages",
-          "Improve performance over time through testing and optimization",
-          "Deliver clear & actionable reporting that connects media spend to real business outcomes",
+          "How we fix it? We turn paid media into a controlled, performance-driven growth engine, built to deliver measurable outcomes. We do this by:",
+          "Turning ad spend into qualified leads and real sales.",
+          "Reaching the right audience, on the right platforms.",
+          "Aligning creatives and messaging to each funnel stage.",
+          "Improving performance through testing and optimisation.",
+          "Delivering clear, outcome-led reporting.",
         ],
-        cta: "START NOW",
+        outcome: "Paid media that's predictable, scalable, and accountable.",
+        cta: "UNLOCK SMARTER MEDIA PERFORMANCE",
       },
       services: {
         title: "Our Services",
@@ -194,6 +243,23 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       clients: {
         title: "Our Clients",
+      },
+      analytics: {
+        title: "Performance-led media that delivered real returns",
+        metrics: [
+          {
+            value: "+52%",
+            label: "improvement in lead quality from paid media",
+          },
+          {
+            value: "–38%",
+            label: "reduction in cost per lead",
+          },
+          {
+            value: "+47%",
+            label: "increase in conversion rates from paid campaigns",
+          },
+        ],
       },
       contact: {
         title: "Get in touch",
@@ -214,6 +280,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
   ar: {
     smm: {
       hero: {
+        tagline: "وكالة إعلامية حائزة على جوائز",
         title: "من منصات التواصل الاجتماعي إلى نتائج حقيقية.",
         subtitle: "استراتيجية واضحة ومحتوى منتظم يؤدي إلى نتائج ملموسة.",
         description: "تواصل معنا الآن وابدأ بتحقيق النتائج!",
@@ -230,7 +297,8 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
           "تقديم محتوى ملائم لكل منصة ليجذب الانتباه الصحيح",
           "زيادة فرص اتخاذ القرار وتحقيق نتائج ملموسة",
         ],
-        cta: "ابدأ الآن",
+        outcome: "وسائل تواصل اجتماعي تعمل لصالح عملك، وليس فقط لإنشاء المحتوى.",
+        cta: "حسّن أداء وسائل التواصل الاجتماعي",
       },
       services: {
         title: "خدماتنا",
@@ -251,6 +319,23 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       clients: {
         title: "عملاؤنا",
+      },
+      analytics: {
+        title: "نجعل وسائل التواصل الاجتماعي تعمل بجدية أكبر لعملك:",
+        metrics: [
+          {
+            value: "+68%",
+            label: "نمو متوسط في التفاعل",
+          },
+          {
+            value: "+42%",
+            label: "زيادة في العملاء المحتملين المؤهلين",
+          },
+          {
+            value: "–35%",
+            label: "انخفاض في تكلفة العميل المحتمل من قنوات التواصل الاجتماعي",
+          },
+        ],
       },
       contact: {
         title: "تواصل معنا",
@@ -269,6 +354,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     },
     creative: {
       hero: {
+        tagline: "وكالة إعلامية حائزة على جوائز",
         title: "أفكار وتجارب تُلهم وتبقى.",
         subtitle:
           "أفكار، تصاميم إبداعية، وفعاليات، تكوّن تجارب مميزة تترك بصمة حقيقية عند جمهورك.",
@@ -286,7 +372,8 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
           "فعاليات وتجارب تجذب الجمهور المستهدف للمشاركة",
           "أفكار متكاملة تضمن تحقيق أثر ملموس",
         ],
-        cta: "ابدأ الآن",
+        outcome: "أعمال إبداعية وفعاليات يتذكرها الناس وتستفيد منها العلامات التجارية لفترة طويلة بعد انتهاء اللحظة.",
+        cta: "اكتشف ما يمكن أن تفعله علامتك التجارية",
       },
       services: {
         title: "خدماتنا",
@@ -307,6 +394,23 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       clients: {
         title: "عملاؤنا",
+      },
+      analytics: {
+        title: "نقدم تجارب لا تُنسى بنتائج دائمة",
+        metrics: [
+          {
+            value: "+65%",
+            label: "زيادة في تفاعل الجمهور في الفعاليات",
+          },
+          {
+            value: "+48%",
+            label: "تذكر أعلى للعلامة التجارية بعد الحملات والفعاليات",
+          },
+          {
+            value: "+40%",
+            label: "ارتفاع في معدلات الحضور والتفاعل",
+          },
+        ],
       },
       contact: {
         title: "تواصل معنا",
@@ -325,6 +429,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     },
     "media-buying": {
       hero: {
+        tagline: "وكالة إعلامية حائزة على جوائز",
         title: "حملات إعلانية مدفوعة تحقق أهدافك.",
         subtitle:
           "باستراتيجيات واضحة، نخطط، نشغّل، ونعدّل الحملات باستمرار لضمان أن كل ريال يُساهم في نتائج حقيقية ملموسة.",
@@ -343,7 +448,8 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
           "تحسين الأداء بشكل مستمر من خلال الاختبار والتعديل",
           "تقديم تقارير واضحة وقابلة للتنفيذ تربط الإعلانات الممولة بالنتائج الحقيقية لأعمالك",
         ],
-        cta: "ابدأ الآن",
+        outcome: "إعلانات ممولة يمكن التنبؤ بها، قابلة للتوسع، وخاضعة للمساءلة.",
+        cta: "اطلق أداء إعلاني أذكى",
       },
       services: {
         title: "خدماتنا",
@@ -364,6 +470,23 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       clients: {
         title: "عملاؤنا",
+      },
+      analytics: {
+        title: "إعلانات موجهة بالأداء حققت عوائد حقيقية",
+        metrics: [
+          {
+            value: "+52%",
+            label: "تحسين في جودة العملاء المحتملين من الإعلانات المدفوعة",
+          },
+          {
+            value: "–38%",
+            label: "انخفاض في تكلفة العميل المحتمل",
+          },
+          {
+            value: "+47%",
+            label: "زيادة في معدلات التحويل من الحملات المدفوعة",
+          },
+        ],
       },
       contact: {
         title: "تواصل معنا",
