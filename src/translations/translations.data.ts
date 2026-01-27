@@ -77,7 +77,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
         title: "Our Services",
         items: [
           {
-            title: "Creative Solutions & Activations Management",
+            title: "Creative Solutions",
           },
           {
             title: "Social Media Management, PR & Influencers",
@@ -91,7 +91,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
         ],
       },
       clients: {
-        title: "Our Clients",
+        title: "Our Successful Clients",
       },
       analytics: {
         title: "We make your social media work harder for your business:",
@@ -137,7 +137,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       socialMedia: {
         title: "Creative & Activations",
         description:
-          "Great ideas but limited real-world impact? When campaigns look impressive yet fail to engage, and events generate noise without lasting value, the challenge isn't creativity – it's alignment and execution.",
+          "Great ideas but limited real-world impact? When campaigns look impressive yet fail to engage, and events generate noise without lasting value, the challenge isn't creativity it's alignment and execution.",
         points: [
           "How we fix it? We create brand-led concepts and activations designed to translate ideas into meaningful experiences. We do this by:",
           "Setting clear creative direction from the start",
@@ -145,14 +145,14 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
           "Designing activations that invite real participation",
           "Executing live events and on-ground activations with purpose",
         ],
-        outcome: "Creative work and activations that people remember – and brands benefit from long after the moment ends.",
+        outcome: "Creative work and activations that people remember and brands benefit from long after the moment ends.",
         cta: "EXPLORE WHAT YOUR BRAND COULD ACTIVATE",
       },
       services: {
         title: "Our Services",
         items: [
           {
-            title: "Creative Solutions & Activations Management",
+            title: "Creative Solutions",
           },
           {
             title: "Social Media Management, PR & Influencers",
@@ -166,7 +166,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
         ],
       },
       clients: {
-        title: "Our Clients",
+        title: "Our Successful Clients",
       },
       analytics: {
         title: "We deliver memorable experiences with lasting results",
@@ -228,7 +228,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
         title: "Our Services",
         items: [
           {
-            title: "Creative Solutions & Activations Management",
+            title: "Creative Solutions",
           },
           {
             title: "Social Media Management, PR & Influencers",
@@ -242,7 +242,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
         ],
       },
       clients: {
-        title: "Our Clients",
+        title: "Our Successful Clients",
       },
       analytics: {
         title: "Performance-led media that delivered real returns",
