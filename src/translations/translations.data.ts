@@ -62,9 +62,9 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       socialMedia: {
         title: "SOCIAL MEDIA MANAGEMENT",
         description:
-          "Posting consistently but not seeing real results? If your content looks good but doesn't drive leads, trust, or clear ROI, the problem isn't effort, it's structure.",
+          "Posting consistently but not seeing real results?\n\nIf your content looks good but doesn't drive leads, trust, or clear ROI, the problem isn't effort, it's structure.",
         points: [
-          "How we fix it? We turn social media into a focused growth channel by:",
+          "How we fix it?\n\nWe turn social media into a focused growth channel by:",
           "Creating content that naturally supports the sales journey.",
           "Building credibility through clear storytelling and consistent branding.",
           "Attracting the right audience, not just engagement.",
@@ -137,9 +137,9 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       socialMedia: {
         title: "Creative & Activations",
         description:
-          "Great ideas but limited real-world impact? When campaigns look impressive yet fail to engage, and events generate noise without lasting value, the challenge isn't creativity it's alignment and execution.",
+          "Great ideas but limited real-world impact?\n\nWhen campaigns look impressive yet fail to engage, and events generate noise without lasting value, the challenge isn't creativity it's alignment and execution.",
         points: [
-          "How we fix it? We create brand-led concepts and activations designed to translate ideas into meaningful experiences. We do this by:",
+          "How we fix it?\n\nWe create brand-led concepts and activations designed to translate ideas into meaningful experiences. We do this by:",
           "Setting clear creative direction from the start",
           "Developing concepts that feel authentic and intentional",
           "Designing activations that invite real participation",
@@ -212,9 +212,9 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       socialMedia: {
         title: "Media Buying",
         description:
-          "Spending on ads but unsure what's actually driving results? If your ad budget is going out every month but leads are inconsistent, costs keep rising, or performance feels unpredictable, the issue isn't spend, it's strategy and optimisation.",
+          "Spending on ads but unsure what's actually driving results?\n\nIf your ad budget is going out every month but leads are inconsistent, costs keep rising, or performance feels unpredictable, the issue isn't spend, it's strategy and optimisation.",
         points: [
-          "How we fix it? We turn paid media into a controlled, performance-driven growth engine, built to deliver measurable outcomes. We do this by:",
+          "How we fix it?\n\nWe turn paid media into a controlled, performance-driven growth engine, built to deliver measurable outcomes. We do this by:",
           "Turning ad spend into qualified leads and real sales.",
           "Reaching the right audience, on the right platforms.",
           "Aligning creatives and messaging to each funnel stage.",
@@ -280,25 +280,26 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
   ar: {
     smm: {
       hero: {
-        tagline: "وكالة إعلامية حائزة على جوائز",
-        title: "من منصات التواصل الاجتماعي إلى نتائج حقيقية.",
-        subtitle: "استراتيجية واضحة ومحتوى منتظم يؤدي إلى نتائج ملموسة.",
-        description: "تواصل معنا الآن وابدأ بتحقيق النتائج!",
-        cta: "ابدأ الآن",
+        tagline: "وكالة حائزة على جوائز محلية وإقليمية",
+        title: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة.",
+        subtitle:
+          "فريق واحد يتولى العمل بالكامل، من الفكرة حتى التنفيذ، مع الالتزام بجودة الخدمة وتحقيق نتائج تتجاوز التوقعات.",
+        description: "تواصل معنا لنبدأ بتحقيق نتائج ملموسة.",
+        cta: "احجز استشارتك التسويقية الآن!",
       },
       socialMedia: {
         title: "إدارة وسائل التواصل الاجتماعي",
         description:
-          "نقدم استراتيجيات محتوى مبتكرة تقود جمهورك المستهدف خطوة بخطوة، من الوعي بالعلامة التجارية إلى اتخاذ القرار، من خلال سرد قصصي قوي، رسائل واضحة، وهوية بصرية متناسقة.",
+          "الانتظام في النشر وحده لا يضمن لك النتائج؛ التحدي الحقيقي هو تحويل هذا الظهور إلى ثقة، ثم إلى قرار. في كثير من الأحيان، يبدو المحتوى قويًا من الخارج، لكنه لا ينعكس على نمو الحساب، أو زيادة العملاء المحتملين، أو تحقيق عائد واضح. المسألة ليست في \"كثرة النشر\"… بل في غياب منهجية صحيحة تربط المحتوى بأهداف عملك.",
         points: [
-          "يرتكز أسلوبنا في إدارة وسائل التواصل الاجتماعي على:",
-          "إنتاج محتوى يدعم رحلة الشراء بشكل طبيعي",
-          "بناء مصداقية وثقة طويلة الأمد مع جمهورك عبر القصص الأصيلة",
-          "تقديم محتوى ملائم لكل منصة ليجذب الانتباه الصحيح",
-          "زيادة فرص اتخاذ القرار وتحقيق نتائج ملموسة",
+          "كيف نغيّر ذلك؟\n\nنعمل على إعادة تنظيم دور وسائل التواصل الاجتماعي ضمن منظومة التسويق من خلال:",
+          "محتوى مرتبط بأهداف العمل ويدعم مسار العميل.",
+          "رسائل واضحة وهوية متسقة تعزز المصداقية.",
+          "استهداف دقيق يركّز على الجمهور الأكثر ارتباطًا بالعلامة.",
+          "اتباع استراتيجية فعالة تزيد من فرص التحويل وتحقق نتائج قابلة للقياس.",
         ],
-        outcome: "وسائل تواصل اجتماعي تعمل لصالح عملك، وليس فقط لإنشاء المحتوى.",
-        cta: "حسّن أداء وسائل التواصل الاجتماعي",
+        outcome: "إدارة محتوى مدروسة تدعم نمو أعمالك.",
+        cta: "طوّر أداء منصاتك",
       },
       services: {
         title: "خدماتنا",
@@ -307,33 +308,33 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
             title: "الحلول الإبداعية",
           },
           {
-            title: "شراء الوسائط والإعلان",
+            title: "الإعلانات الرقمية والحملات المدفوعة",
           },
           {
-            title: "إدارة وسائل التواصل الاجتماعي والمؤثرين",
+            title: "إدارة وسائل التواصل الاجتماعي، العلاقات العامة، والتسويق عبر المؤثرين",
           },
           {
-            title: "إدارة الأنشطة والفعاليات",
+            title: "إدارة الفعاليات",
           },
         ],
       },
       clients: {
-        title: "عملاؤنا",
+        title: "عملاؤنا الناجحون",
       },
       analytics: {
         title: "نجعل وسائل التواصل الاجتماعي تعمل بجدية أكبر لعملك:",
         metrics: [
           {
             value: "+68%",
-            label: "نمو متوسط في التفاعل",
+            label: "زيادة في معدلات التفاعل",
           },
           {
             value: "+42%",
-            label: "زيادة في العملاء المحتملين المؤهلين",
+            label: "زيادة في عدد العملاء المحتملين",
           },
           {
             value: "–35%",
-            label: "انخفاض في تكلفة العميل المحتمل من قنوات التواصل الاجتماعي",
+            label: "قلة في تكلفة العميل المحتمل عبر منصات التواصل الاجتماعي",
           },
         ],
       },
@@ -349,31 +350,31 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       footer: {
         copyright:
-          "© 2025 A2Z ميديا. مدعوم من A2Z ميديا جروب. جميع الحقوق محفوظة.",
+          "© 2026 A2Z ميديا. مدعوم من A2Z ميديا جروب. جميع الحقوق محفوظة.",
       },
     },
     creative: {
       hero: {
-        tagline: "وكالة إعلامية حائزة على جوائز",
-        title: "أفكار وتجارب تُلهم وتبقى.",
+        tagline: "وكالة حائزة على جوائز محلية وإقليمية",
+        title: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة.",
         subtitle:
-          "أفكار، تصاميم إبداعية، وفعاليات، تكوّن تجارب مميزة تترك بصمة حقيقية عند جمهورك.",
-        description: "تواصل معنا الآن وابدأ بتحقيق النتائج!",
-        cta: "ابدأ الآن",
+          "فريق واحد يتولى العمل بالكامل، من الفكرة حتى التنفيذ، مع التزام بجودة الخدمة وتحقيق نتائج تتجاوز التوقعات.",
+        description: "تواصل معنا لنبدأ بتحقيق نتائج ملموسة.",
+        cta: "اطلب تقييمًا إبداعيًا مجانيًا!",
       },
       socialMedia: {
         title: "التصاميم الإبداعية والفعاليات",
         description:
-          "نقدم تصاميم إبداعية مع التوجيه اللازم بجاني الأنشطة والفعاليات، مع التركيز على خلق تجارب مدروسة تتماشى مع هوية علامتك التجارية. كل خطوة بهدف واضح.",
+          "الأفكار قوية لكن تأثيرها على أرض الواقع محدود؟\n\nحين تبدو الحملات جذابة بصريًا دون تفاعل فعلي، وتُحدث الفعاليات ضجة مؤقتة بلا قيمة مستدامة، فالتحدي ليس في الإبداع، بل في وضوح الرؤية وجودة التنفيذ.",
         points: [
-          "يعتمد أسلوبنا الإبداعي على:",
-          "توجيه إبداعي واضح ومتسق مع هوية العلامة التجارية",
-          "أفكار وتصاميم مبتكرة تعكس هوية العلامة التجارية",
-          "فعاليات وتجارب تجذب الجمهور المستهدف للمشاركة",
-          "أفكار متكاملة تضمن تحقيق أثر ملموس",
+          "كيف نغيّر ذلك؟\n\nنطوّر مفاهيم وتجارب تقودها رؤيتك، مصمّمة لتحويل الأفكار إلى تجارب مؤثرة وذات معنى. ونحقق ذلك من خلال:",
+          "تحديد توجه إبداعي واضح منذ البداية.",
+          "تطوير مفاهيم أصيلة تعكس هويتك.",
+          "تصميم تجارب تحفّز المشاركة الحقيقية.",
+          "تنفيذ الفعاليات باحتراف ولغرض واضح.",
         ],
-        outcome: "أعمال إبداعية وفعاليات يتذكرها الناس وتستفيد منها العلامات التجارية لفترة طويلة بعد انتهاء اللحظة.",
-        cta: "اكتشف ما يمكن أن تفعله علامتك التجارية",
+        outcome: "أعمال إبداعية وأفكار تتحول لتجارب واقعية تصنع ارتباط قوي مع العملاء، وتحقق قيمة حقيقية للعلامات التجارية حتى بعد انتهاء الفعالية.",
+        cta: "اكتشف كيف نُفعِّل قوة علامتك",
       },
       services: {
         title: "خدماتنا",
@@ -382,13 +383,13 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
             title: "الحلول الإبداعية",
           },
           {
-            title: "شراء الوسائط والإعلان",
+            title: "الإعلانات الرقمية والحملات المدفوعة",
           },
           {
-            title: "إدارة وسائل التواصل الاجتماعي والمؤثرين",
+            title: "إدارة وسائل التواصل الاجتماعي، العلاقات العامة، والتسويق عبر المؤثرين",
           },
           {
-            title: "إدارة الأنشطة والفعاليات",
+            title: "إدارة الفعاليات",
           },
         ],
       },
@@ -396,19 +397,19 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
         title: "عملاؤنا",
       },
       analytics: {
-        title: "نقدم تجارب لا تُنسى بنتائج دائمة",
+        title: "أرقام تعكس طبيعة عملنا",
         metrics: [
           {
             value: "+65%",
-            label: "زيادة في تفاعل الجمهور في الفعاليات",
+            label: "في تفاعل الجمهور خلال الفعاليات",
           },
           {
             value: "+48%",
-            label: "تذكر أعلى للعلامة التجارية بعد الحملات والفعاليات",
+            label: "في تذكّر العلامة التجارية بعد الحملات والفعاليات",
           },
           {
             value: "+40%",
-            label: "ارتفاع في معدلات الحضور والتفاعل",
+            label: "في معدلات الحضور والتفاعل",
           },
         ],
       },
@@ -424,32 +425,32 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       footer: {
         copyright:
-          "© 2025 A2Z ميديا. مدعوم من A2Z ميديا جروب. جميع الحقوق محفوظة.",
+          "© 2026 A2Z ميديا. مدعوم من A2Z ميديا جروب. جميع الحقوق محفوظة.",
       },
     },
     "media-buying": {
       hero: {
-        tagline: "وكالة إعلامية حائزة على جوائز",
-        title: "حملات إعلانية مدفوعة تحقق أهدافك.",
+        tagline: "وكالة حائزة على جوائز محلية وإقليمية",
+        title: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة.",
         subtitle:
-          "باستراتيجيات واضحة، نخطط، نشغّل، ونعدّل الحملات باستمرار لضمان أن كل ريال يُساهم في نتائج حقيقية ملموسة.",
-        description: "تواصل معنا الآن وابدأ بتحقيق النتائج!",
-        cta: "ابدأ الآن",
+          "فريق واحد يتولى العمل بالكامل، من الفكرة حتى التنفيذ، مع الالتزام بجودة الخدمة وتحقيق نتائج تتجاوز التوقعات.",
+        description: "تواصل معنا لنبدأ بتحقيق نتائج ملموسة.",
+        cta: "ابدأ الآن!",
       },
       socialMedia: {
-        title: "الإعلانات الممولة وتحسين الأداء",
+        title: "الإعلانات الرقمية والمدفوعة",
         description:
-          "نقدم استراتيجيات إعلانية شاملة تدفع جمهورك المستهدف إلى اتخاذ القرار، باستخدام تخطيط ذكي، أهداف واضحة، وتحسين مستمر لضمان تأثير حقيقي وملموس.",
+          "تستثمر في الإعلانات، لكن النتائج غير واضحة؟\n\nعندما تُصرف الميزانيات دون استقرار في عدد العملاء المحتملين، مع ارتفاع التكلفة واضطراب الأداء، فالمشكلة لا تكمن في معدّل الصرف، بل في غياب الاستراتيجية والتحسين الفعّال.",
         points: [
-          "  يركز أسلوبنا في الإعلانات الممولة على:",
-          "تطوير استراتيجيات متكاملة للوصول إلى عملاء محتملين ومبيعات قابلة للقياس",
-          "تحديد الجمهور المناسب والوصول إليه عبر جميع المنصات",
-          "مواءمة الإعلانات والرسائل مع أهداف الحملة ومراحل رحلة العميل",
-          "تحسين الأداء بشكل مستمر من خلال الاختبار والتعديل",
-          "تقديم تقارير واضحة وقابلة للتنفيذ تربط الإعلانات الممولة بالنتائج الحقيقية لأعمالك",
+          "كيف نغيّر المعادلة؟\n\nنحوّل الإعلانات المدفوعة إلى منظومة مُحكمة التخطيط قائمة على الأداء، وتحقق نتائج ملموسة يمكن قياسها.",
+          "تحويل ميزانيتك إلى عملاء محتملين مؤهلين ونتائج ملموسة.",
+          "الوصول للجمهور الصحيح بدقة، من خلال المنصات المناسبة.",
+          "توحيد الرسالة والجانب الإبداعي لخدمة هدف كل مرحلة.",
+          "تحسين النتائج من خلال الاختبارات وإجراء التعديلات اللازمة لكل مرحلة.",
+          "تقارير مفصلة وواضحة تركّز على النتائج.",
         ],
-        outcome: "إعلانات ممولة يمكن التنبؤ بها، قابلة للتوسع، وخاضعة للمساءلة.",
-        cta: "اطلق أداء إعلاني أذكى",
+        outcome: "حملات إعلانية ناجحة، تحكّم أفضل في الميزانية، وأداء ثابت.",
+        cta: "حسن نتائج إعلاناتك الآن",
       },
       services: {
         title: "خدماتنا",
@@ -458,13 +459,13 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
             title: "الحلول الإبداعية",
           },
           {
-            title: "شراء الوسائط والإعلان",
+            title: "الإعلانات الرقمية والحملات المدفوعة",
           },
           {
-            title: "إدارة وسائل التواصل الاجتماعي والمؤثرين",
+            title: "إدارة وسائل التواصل الاجتماعي، العلاقات العامة، والتسويق عبر المؤثرين.",
           },
           {
-            title: "إدارة الأنشطة والفعاليات",
+            title: "إدارة الفعاليات",
           },
         ],
       },
@@ -472,19 +473,19 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
         title: "عملاؤنا",
       },
       analytics: {
-        title: "إعلانات موجهة بالأداء حققت عوائد حقيقية",
+        title: "نتائج مبنية على الأداء بعوائد واضحة",
         metrics: [
           {
             value: "+52%",
-            label: "تحسين في جودة العملاء المحتملين من الإعلانات المدفوعة",
+            label: "في جودة العملاء المحتملين من الحملات المدفوعة",
           },
           {
             value: "–38%",
-            label: "انخفاض في تكلفة العميل المحتمل",
+            label: "في تكلفة العميل المحتمل",
           },
           {
             value: "+47%",
-            label: "زيادة في معدلات التحويل من الحملات المدفوعة",
+            label: "في معدلات التحويل",
           },
         ],
       },
@@ -500,7 +501,7 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
       },
       footer: {
         copyright:
-          "© 2025 A2Z ميديا. مدعوم من A2Z ميديا جروب. جميع الحقوق محفوظة.",
+          "© 2026 A2Z ميديا. مدعوم من A2Z ميديا جروب. جميع الحقوق محفوظة.",
       },
     },
   },
