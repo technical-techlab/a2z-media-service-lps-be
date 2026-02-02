@@ -9,10 +9,12 @@ export class TranslationsController {
   @Get()
   getTranslations(
     @Query('language') language: 'en' | 'ar',
-    @Query('service') service: ServiceSlug
+    @Query('service') service: ServiceSlug,
+    @Query('country') country?: 'qa' | 'sa'
   ) {
     const lang = language === 'ar' ? 'ar' : 'en';
     const serviceSlug = service || 'smm';
-    return this.translationsService.getTranslations(lang, serviceSlug);
+    const countrySlug = country === 'sa' ? 'sa' : 'qa';
+    return this.translationsService.getTranslations(lang, serviceSlug, countrySlug);
   }
 }

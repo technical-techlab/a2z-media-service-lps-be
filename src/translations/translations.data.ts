@@ -2,8 +2,8 @@ export type ServiceSlug = "smm" | "creative" | "media-buying";
 
 export interface Translation {
   hero: {
-    tagline: string;
-    title: string;
+    tagline: string | { qa: string; sa: string };
+    title: string | { qa: string; sa: string };
     subtitle: string;
     description: string;
     cta: string;
@@ -52,7 +52,10 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
   en: {
     smm: {
       hero: {
-        tagline: "Award-Winning Media Agency",
+        tagline: {
+          qa: "Award-winning media agency in Qatar",
+          sa: "Award-winning media agency in Saudi Arabia"
+        },
         title: "Be consistently ahead in your marketing, guided by our proven systems and real results.",
         subtitle:
           "We are your fully integrated partner, delivering results and end-to-end in-house execution supported by exceptional service.",
@@ -127,7 +130,10 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     },
     creative: {
       hero: {
-        tagline: "Award-Winning Media Agency",
+        tagline: {
+          qa: "Award-winning media agency in Qatar",
+          sa: "Award-winning media agency in Saudi Arabia"
+        },
         title: "Be consistently ahead in your marketing guided by our proven systems and real results.",
         subtitle:
           "We are your fully integrated partner, delivering results and end-to-end in-house execution supported by exceptional service.",
@@ -202,7 +208,10 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     },
     "media-buying": {
       hero: {
-        tagline: "Award-Winning Media Agency",
+        tagline: {
+          qa: "Award-winning media agency in Qatar",
+          sa: "Award-winning media agency in Saudi Arabia"
+        },
         title: "Be consistently ahead in your marketing guided by our proven systems and real results.",
         subtitle:
           "We are your fully integrated partner, delivering results and end-to-end in-house execution supported by exceptional service.",
@@ -281,7 +290,10 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     smm: {
       hero: {
         tagline: "وكالة حائزة على جوائز محلية وإقليمية",
-        title: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة.",
+        title: {
+          qa: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة في قطر.",
+          sa: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة في السعودية."
+        },
         subtitle:
           "فريق واحد يتولى العمل بالكامل، من الفكرة حتى التنفيذ، مع الالتزام بجودة الخدمة وتحقيق نتائج تتجاوز التوقعات.",
         description: "تواصل معنا لنبدأ بتحقيق نتائج ملموسة.",
@@ -356,7 +368,10 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     creative: {
       hero: {
         tagline: "وكالة حائزة على جوائز محلية وإقليمية",
-        title: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة.",
+        title: {
+          qa: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة في قطر.",
+          sa: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة في السعودية."
+        },
         subtitle:
           "فريق واحد يتولى العمل بالكامل، من الفكرة حتى التنفيذ، مع التزام بجودة الخدمة وتحقيق نتائج تتجاوز التوقعات.",
         description: "تواصل معنا لنبدأ بتحقيق نتائج ملموسة.",
@@ -431,7 +446,10 @@ export const translations: Record<"en" | "ar", LanguageTranslations> = {
     "media-buying": {
       hero: {
         tagline: "وكالة حائزة على جوائز محلية وإقليمية",
-        title: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة.",
+        title: {
+          qa: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة في قطر.",
+          sa: "عزز حضورك بخطط واستراتيجيات مجرّبة، مدروسة، وواضحة في السعودية."
+        },
         subtitle:
           "فريق واحد يتولى العمل بالكامل، من الفكرة حتى التنفيذ، مع الالتزام بجودة الخدمة وتحقيق نتائج تتجاوز التوقعات.",
         description: "تواصل معنا لنبدأ بتحقيق نتائج ملموسة.",
