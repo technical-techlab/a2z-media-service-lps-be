@@ -3,10 +3,11 @@ import { SubmissionsController } from './submissions.controller';
 import { SubmissionsService } from './submissions.service';
 import { EmailModule } from '../email/email.module';
 import { RecaptchaModule } from '../recaptcha/recaptcha.module';
+import { GoogleSheetService } from '../google-sheets/google-sheet.service';
 
 @Module({
   imports: [EmailModule, RecaptchaModule],
   controllers: [SubmissionsController],
-  providers: [SubmissionsService],
+  providers: [SubmissionsService, GoogleSheetService],
 })
 export class SubmissionsModule {}

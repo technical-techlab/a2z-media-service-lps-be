@@ -1,8 +1,9 @@
-import { Injectable } from '@nestjs/common';
-import { PrismaService } from '../prisma/prisma.service';
-import { EmailService } from '../email/email.service';
-import { RecaptchaService } from '../recaptcha/recaptcha.service';
-import { CreateSubmissionDto } from './dto/create-submission.dto';
+import { Injectable } from "@nestjs/common";
+import { PrismaService } from "../prisma/prisma.service";
+import { EmailService } from "../email/email.service";
+import { RecaptchaService } from "../recaptcha/recaptcha.service";
+import { CreateSubmissionDto } from "./dto/create-submission.dto";
+import { GoogleSheetService } from "src/google-sheets/google-sheet.service";
 
 @Injectable()
 export class SubmissionsService {
@@ -10,6 +11,7 @@ export class SubmissionsService {
     private prisma: PrismaService,
     private emailService: EmailService,
     private recaptchaService: RecaptchaService,
+    private googleSheetService: GoogleSheetService,
   ) {}
 
   async create(createSubmissionDto: CreateSubmissionDto) {
@@ -20,7 +22,7 @@ export class SubmissionsService {
     }
 
     const { recaptchaToken, ...submissionData } = createSubmissionDto;
-    
+
     const submission = await this.prisma.submission.create({
       data: submissionData,
     });
@@ -32,9 +34,14 @@ export class SubmissionsService {
         id: submission.id,
       });
     } catch (error) {
-      console.error('Failed to send email notification:', error);
+      console.error("Failed to send email notification:", error);
       // Don't fail the submission if email fails
     }
+
+    await this.googleSheetService.syncSubmission({
+      ...createSubmissionDto,
+      id: submission.id,
+    });
 
     return submission;
   }
@@ -42,7 +49,7 @@ export class SubmissionsService {
   async findAll() {
     return this.prisma.submission.findMany({
       orderBy: {
-        createdAt: 'desc',
+        createdAt: "desc",
       },
     });
   }
